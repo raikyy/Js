@@ -56,6 +56,27 @@ else {
     console.log('Промокод не подходит');
 }
 
+let count = 0;
+let pass = 'qwerty';
+ler errorCount;
+while (count<5) {
+    let passInput = prompt ('Введите пароль')
+    if (passInput == pass) {
+        console.log('Добрый день! Пароль введен верно!')
+        break;
+    } 
+    else {
+        console.log('Повторите ввод')
+        errorCount++
+    }
+    if (errorCount==5) {
+        console.log('Попытки ввода пароля закончились');
+        break;
+    }
+    count++;
+}
+
+
 
 let n = 100
 let num = 0
@@ -65,6 +86,16 @@ while (n>50) {
 }
 console.log(num)
 
+
+
+let sum = 0;
+for (let i=0; i<10; i++) {
+    let result = +prompt('Введите число');
+    if (result>0) {
+        sum+=result;
+    }
+}
+console.log(sum)
 
 
 function msg(Username, year) {
@@ -82,7 +113,7 @@ function ret(a) {
 ret(9)
 */
 
-
+/*
 let i = 1
 if (i=1) {
     console.log('Переменная i равна 1')
@@ -143,7 +174,7 @@ while (w>=45, w<=670) {
 }
 
 //Тут что-то страшное, потому что браузер зависает:(
-/*
+
 for (let i = 45; i++;) {
     if (i<=65) {
         console.log (i)
@@ -152,7 +183,7 @@ for (let i = 45; i++;) {
         console.log (i)
     }
 }
-*/
+
 
 
 function hello1(b) {
@@ -160,3 +191,70 @@ function hello1(b) {
 }
 
 hello1(a)
+
+
+function season (a) {
+    if (a.toLowerCase()=='весна') {
+        console.log('март,апрель,май')
+    }
+    else if (a.toLowerCase()=='лето') {
+        console.log('июнь,июль,август')
+    }
+    else if (a.toLowerCase()=='осень') {
+        console.log('сентябрь,октябрь,ноябрь')
+    }
+    else if (a.toLowerCase()=='зима') {
+        console.log('декабрь,январь,февраль')
+    }
+}
+season(a='Весна')
+
+function number(num) {
+    if (num==1) {
+        console.log('Вы ввели еденицу')
+    }
+    else {
+        console.log('Введенное число не еденица')
+    }
+}
+number(num=1)
+*/
+
+let a = prompt('Введите количество баллов')
+function mark(a) {
+    if (a >= 90) {
+        console.log('A')
+    }
+    else if (a >= 80) {
+        console.log('B')
+    }
+    else if (a >= 70) {
+        console.log('C')
+    }
+    else if (a >= 60) {
+        console.log('D')
+    }
+    else {
+        console.log('F')
+    }
+}
+mark(a)
+
+
+let text = prompt('Введите строку')
+function low(text) {
+    return text.toLowerCase()
+}
+console.log(low(text))
+
+
+let c
+let d
+let e
+function number(c,d,e) {
+    c = Math.random() *100
+    d = Math.random() *100
+    e = Math.random() *100
+    console.log(`${Math.round(c)}-${Math.round(d)}-${Math.round(e)}`)
+}
+number(c,d,e)
