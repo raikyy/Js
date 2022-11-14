@@ -368,17 +368,18 @@ console.log(num[i]+3)
 }
 
 let an = [];
-for (let i=0; i<=20; i++) {
+ for (let i=0; i<=20; i++) {
         an.push(i);
     }
-console.log(an)
+console.log(an) 
 
+let se = []
 for (let i=10; i<=40; i++) {
-    if (i%2==0) {
-    an.push(i);
+    if (i%2==0, i>=10) {
+    se.push(i);
     }
 }
-console.log(an)
+console.log(se)
 
 let rat = [1,5,0,-3,-1,6];
 for (let i=0; i<rat.length; i++) {
