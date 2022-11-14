@@ -218,7 +218,7 @@ function number(num) {
     }
 }
 number(num=1)
-*/
+
 
 let a = prompt('Введите количество баллов')
 function mark(a) {
@@ -258,3 +258,137 @@ function number(c,d,e) {
     console.log(`${Math.round(c)}-${Math.round(d)}-${Math.round(e)}`)
 }
 number(c,d,e)
+*/
+/* 
+
+let user = {
+    name: 'John',
+    age: 30,
+    passport: {
+        serial: 4412,
+        number: 238650,
+        date: '10.05.2000',
+    },
+    student: true,
+}
+console.log(user.passport.number);
+delete user.student;
+user.work = true;
+if ('profession' in user === false) {
+    user.profession = 'driver';
+}
+for (let key in user) {
+    console.log(key)
+}
+for (let key in user) {
+    console.log(user[key])
+}
+user.passport.number = 242187;
+ 
+
+
+let car = {
+    color: 'orange',
+    engine: '2L',
+    brand: 'toyota',
+    drive: function() {
+        console.log('driving')
+    },
+    park: function() {
+        console.log('parking')
+    },
+    start: function() {
+        console.log('starting')
+    },
+    stop: function() {
+        console.log('stopping')
+    },
+    driver: {
+        name: 'Ben',
+        lastName: 'Folkner',
+        old: 42,
+        category: 'doctor',
+    },
+}
+console.log(car);
+car.driver.name = 'William'
+for (let key in car.driver) {
+    console.log(car.driver[key])
+}
+delete car.driver.lastName;
+
+console.log(car.driver);
+
+if ('model' in car === false) {
+    console.log('Такое свойство отсутствует')
+}
+else {
+    console.log(car.model)
+}
+
+for (let key in car) {
+    if (typeof car[key] === 'string') {
+    console.log(car[key])
+    }
+}
+
+car.men = { 
+    name: 'James',
+    category: 'teacher'
+}
+
+console.log(car)
+
+var men = 'men'
+console.log(car[men]) 
+*/
+
+
+let num = [1,2,3,4,5,6];
+console.log(num);
+
+let str = ['Ёж','Белка','Кролик'];
+console.log(str);
+
+let arr = ['a', 'b', 'c', 'd'];
+console.log(`${arr[0]}+${arr[1]}+${arr[2]}+${arr[3]}`)
+
+let arr2 = [2,'Корова',4,'Баран']
+console.log(arr2.length)
+
+console.log(arr2[arr2.length-1])
+
+arr[0] = 1;
+arr[1] = 2;
+arr[2] = 3;
+console.log(arr)
+
+for (let i=0; i<num.length; i++) {
+console.log(num[i]+3)
+}
+
+let an = [];
+for (let i=0; i<=20; i++) {
+        an.push(i);
+    }
+console.log(an)
+
+for (let i=10; i<=40; i++) {
+    if (i%2==0) {
+    an.push(i);
+    }
+}
+console.log(an)
+
+let rat = [1,5,0,-3,-1,6];
+for (let i=0; i<rat.length; i++) {
+    if (rat[i]== -1) {
+        continue;
+    }
+    console.log(rat[i])
+    }
+
+for (let i=0; i<rat.length; i++) {
+    let r = (rat.length-1) -i;
+    console.log(rat[i])
+}
