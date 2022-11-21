@@ -341,7 +341,7 @@ console.log(car)
 
 var men = 'men'
 console.log(car[men]) 
-*/
+
 
 
 let num = [1,2,3,4,5,6];
@@ -393,3 +393,33 @@ for (let i=0; i<rat.length; i++) {
     let r = (rat.length-1) -i;
     console.log(rat[i])
 }
+*/
+let arr = [1,2,3];
+
+for (let key of arr) {
+    console.log(key)
+}
+
+function arrSum (arr) {
+    let sum = 0;
+for (let i=1; i<arr.length; i++) {
+    sum += arr[i];
+}
+    console.log(sum);
+}
+arrSum(arr)
+
+arr.push(4,5)
+console.log(arr)
+
+let men = prompt('Введите ваше ФИ и возраст (через пробел без запятых)');
+let array = men.split(' ');
+let [lastName, name, age] = array;
+console.log(`Имя:${name}`)
+console.log(`Фамилия:${lastName}`)
+console.log(`Возраст:${age}`)
+
+
+
+
+
